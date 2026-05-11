@@ -287,6 +287,24 @@ img{max-width:100%;display:block;}
 .scroll-top.visible{opacity:1;transform:translateY(0);}
 .scroll-top:hover{transform:translateY(-3px);box-shadow:0 8px 30px var(--green-glow);}
 
+/* FLOATING SIDE NAV */
+.side-nav{
+  position:fixed;top:50%;left:0;transform:translateY(-50%);z-index:1000;
+  background:rgba(15,31,23,0.4);backdrop-filter:blur(10px);
+  border-top-right-radius:16px;border-bottom-right-radius:16px;
+  border:1px solid rgba(255,255,255,0.1);border-left:none;
+  padding:16px 8px;width:50px;
+  transition:width 0.3s cubic-bezier(0.4,0,0.2,1), background 0.3s;
+  overflow:hidden;
+}
+.side-nav:hover{width:150px;background:rgba(15,31,23,0.95);}
+.side-nav ul{display:flex;flex-direction:column;gap:16px;}
+.side-nav-link{display:flex;align-items:center;color:rgba(255,255,255,0.5);text-decoration:none;font-size:1.1rem;transition:var(--transition);width:140px;}
+.side-nav-link i{width:34px;text-align:center;flex-shrink:0;}
+.side-nav-link span{font-size:0.85rem;font-weight:500;opacity:0;transition:opacity 0.2s;white-space:nowrap;}
+.side-nav:hover .side-nav-link span{opacity:1;}
+.side-nav-link:hover{color:var(--green-light);transform:translateX(4px);}
+
 /* LIGHTBOX */
 .lightbox{position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:9999;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity 0.3s ease;}
 .lightbox.active{opacity:1;pointer-events:all;}
@@ -318,4 +336,17 @@ img{max-width:100%;display:block;}
   .profile-photo-wrap{width:180px;height:180px;}
   .institution-banner{padding:6px 10px;gap:7px;}
   .institution-banner img{height:34px;}
+  .side-nav{
+    top:auto;bottom:0;left:0;transform:none;width:100%;
+    border-radius:0;border:none;border-top:1px solid rgba(255,255,255,0.1);
+    padding:12px 0;display:flex;justify-content:center;
+    background:rgba(15,31,23,0.95);
+  }
+  .side-nav:hover{width:100%;}
+  .side-nav ul{flex-direction:row;justify-content:space-around;width:100%;gap:0;margin-bottom:0;}
+  .side-nav-link{width:auto;justify-content:center;flex:1;}
+  .side-nav-link span{display:none;}
+  .side-nav-link i{width:auto;font-size:1.3rem;}
+  .side-nav-link:hover{transform:translateY(-4px);}
+  .scroll-top{bottom:80px;}
 }

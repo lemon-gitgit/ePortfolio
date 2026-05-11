@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lem Garcia | IT Portfolio</title>
+  <meta name="description" content="Professional e-portfolio of Leemuel Lenard D. Garcia – BSIT student at De La Salle Lipa, specializing in AI, networking, and data analytics.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<canvas id="particles-canvas"></canvas>
+
+<!-- INSTITUTIONAL BANNER -->
+<div class="institution-banner">
+  <img src="cite_logo.png" alt="CITE Logo">
+  <div class="banner-divider"></div>
+  <img src="dlsl_logo.png" alt="DLSL Logo">
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="#hero" class="nav-logo">Lem Garcia</a>
+    <div class="nav-links" id="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#courses">Courses</a>
+      <a href="#projects">Projects</a>
+      <a href="#reflection">Reflection</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge"><span class="dot"></span><span class="typed">De La Salle Lipa – CITE</span></div>
+      <h1>Hi, I'm <span class="gradient-text">Lem Garcia</span></h1>
+      <p class="hero-course">Bachelor of Science in Information Technology</p>
+      <p class="hero-desc">Aspiring IT professional focused on networking, artificial intelligence, data analytics, system development, and continuous learning. Passionate about solving real-world problems through technology and innovation.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> View Portfolio</a>
+        <a href="#certifications" class="btn btn-outline"><i class="fas fa-certificate"></i> Certifications</a>
+        <a href="#about" class="btn btn-outline"><i class="fas fa-user"></i> About Me</a>
+      </div>
+    </div>
+    <div class="hero-photo-col">
+      <div class="profile-photo-wrap">
+        <img src="profile.jpg" alt="Leemuel Lenard D. Garcia">
+      </div>
+      <span class="photo-label">LEEMUEL LENARD D. GARCIA</span>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-section" id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card fade-in"><div class="stat-number" data-target="9">0+</div><div class="stat-label">Courses Completed</div></div>
+      <div class="stat-card fade-in"><div class="stat-number" data-target="9">0+</div><div class="stat-label">Certifications Earned</div></div>
+      <div class="stat-card fade-in"><div class="stat-number" data-target="12">0+</div><div class="stat-label">Technical Skills</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section section-padding" id="about">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-tag">// About Me</span>
+      <h2 class="section-title">Professional Summary</h2>
+      <p class="section-subtitle">Driven by curiosity and a passion for innovation</p>
+    </div>
+    <div class="about-content">
+      <div class="about-text fade-in">
+        <p>I am an Information Technology student at De La Salle Lipa – College of Information Technology and Engineering, driven by a deep curiosity for how technology shapes the world. My academic journey has given me a solid foundation in <strong>AI, networking, cybersecurity, Python programming, system development, and data science</strong>.</p>
+        <p>I believe in the power of a <strong>growth mindset</strong> and continuous learning. In a field that evolves rapidly, staying adaptable and embracing new challenges is essential. I strive to balance <strong>technical expertise with soft skills</strong>—communication, critical thinking, and emotional intelligence—because I know that great technology is built by people who collaborate effectively.</p>
+        <p>My goal is to become a <strong>competent IT professional</strong> capable of adapting to evolving technologies, contributing meaningfully to teams, and leveraging innovation to solve real-world problems.</p>
+      </div>
+      <div class="about-highlights fade-in">
+        <div class="highlight-item">
+          <div class="highlight-icon"><i class="fas fa-brain"></i></div>
+          <div><h4>AI &amp; Data Science</h4><p>Exploring machine learning, NLP, and data-driven solutions</p></div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon"><i class="fas fa-network-wired"></i></div>
+          <div><h4>Networking &amp; Security</h4><p>Building expertise in network infrastructure and cybersecurity</p></div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon"><i class="fas fa-code"></i></div>
+          <div><h4>Python &amp; System Development</h4><p>Writing clean, efficient code for analysis, automation, and building systems</p></div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon"><i class="fas fa-seedling"></i></div>
+          <div><h4>Growth Mindset</h4><p>Committed to lifelong learning and professional development</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills-section section-padding" id="skills">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-tag">// Skill Set</span>
+      <h2 class="section-title">Technical & Soft Skills</h2>
+      <p class="section-subtitle">A growing toolkit for the modern IT landscape</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card fade-in">
+        <div class="skill-card-header"><div class="icon" style="background:rgba(34,197,94,0.15);color:#22c55e"><i class="fas fa-network-wired"></i></div><span class="level" style="background:rgba(34,197,94,0.1);color:#22c55e">Core</span></div>
+        <h3>Networking Fundamentals</h3><div class="skill-bar"><div class="skill-bar-fill" data-width="85"></div></div><p class="skill-category">OSI/TCP-IP • Routing • Switching</p>
+      </div>
+      <div class="skill-card fade-in">
+        <div class="skill-card-header"><div class="icon" style="background:rgba(34,197,94,0.15);color:#22c55e"><i class="fas fa-server"></i></div><span class="level" style="background:rgba(34,197,94,0.1);color:#22c55e">Core</span></div>
+        <h3>IPv4 / IPv6 Addressing</h3><div class="skill-bar"><div class="skill-bar-fill" data-width="80"></div></div><p class="skill-category">Subnetting • ICMPv6 • Neighbor Discovery</p>
+      </div>
+      <div class="skill-card fade-in">
+        <div class="skill-card-header"><div class="icon" style="background:rgba(34,197,94,0.15);color:#16a34a"><i class="fas fa-globe"></i></div><span class="level" style="background:rgba(34,197,94,0.1);color:#22c55e">Core</span></div>
+        <h3>DNS &amp; DHCP</h3><div class="skill-bar"><div class="skill-bar-fill" data-width="78"></div></div><p class="skill-category">Name Resolution • Dynamic Configuration</p>
+      </div>
+      <div class="skill-card fade-in">
+        <div class="skill-card-header"><div class="icon" style="background:rgba(34,197,94,0.15);color:#22c55e"><i class="fas fa-wrench"></i></div><span class="level" style="background:rgba(134,239,172,0.1);color:#86efac">Applied</span></div>
+        <h3>Network Troubleshooting</h3><div class="skill-bar"><div class="skill-bar-fill" data-width="75"></div></div><p class="skill-category">Ping • Tracert • Diagnostics</p>
+      </div>
+      <div class="skill-card fade-in">
+        <div class="skill-card-header"><div class="icon" style="background:rgba(34,197,94,0.15);color:#22c55e"><i class="fab fa-python"></i></div><span class="level" style="background:rgba(34,197,94,0.1);color:#22c55e">Core</span></div>
+        <h3>Python Programming</h3><div class="skill-bar"><div class="skill-bar-fill" data-width="82"></div></div><p class="skill-category">Variables • Functions • Packages</p>
+      </div>
+      <div class="skill-card fade-in">
+        <div class="skill-card-header"><div class="icon" style="background:rgba(34,197,94,0.15);color:#16a34a"><i class="fas fa-table"></i></div><span class="level" style="background:rgba(134,239,172,0.1);color:#86efac">Applied</span></div>
+        <h3>pandas &amp; NumPy</h3><div class="skill-bar"><div class="skill-bar-fill" data-width="76"></div></div><p class="skill-category">DataFrames • Arrays • Data Wrangling</p>
+      </div>
+      <div class="skill-card fade-in">
+        <div class="skill-card-header"><div class="icon" style="background:rgba(34,197,94,0.15);color:#22c55e"><i class="fas fa-chart-bar"></i></div><span class="level" style="background:rgba(134,239,172,0.1);color:#86efac">Applied</span></div>
+        <h3>Data Visualization</h3><div class="skill-bar"><div class="skill-bar-fill" data-width="72"></div></div><p class="skill-category">Matplotlib • Charts • Simulations</p>
+      </div>
+      <div class="skill-card fade-in">
+        <div class="skill-card-header"><div class="icon" style="background:rgba(34,197,94,0.15);color:#22c55e"><i class="fas fa-robot"></i></div><span class="level" style="background:rgba(34,197,94,0.08);color:#86efac">Emerging</span></div>
+        <h3>AI Fundamentals</h3><div class="skill-bar"><div class="skill-bar-fill" data-width="70"></div></div><p class="skill-category">Machine Learning • Ethics • Applications</p>
+      </div>
+      <div class="skill-card fade-in">
+        <div class="skill-card-header"><div class="icon" style="background:rgba(34,197,94,0.15);color:#16a34a"><i class="fas fa-language"></i></div><span class="level" style="background:rgba(34,197,94,0.08);color:#86efac">Emerging</span></div>
+        <h3>NLP Fundamentals</h3><div class="skill-bar"><div class="skill-bar-fill" data-width="65"></div></div><p class="skill-category">Text Processing • Language Models • Chatbots</p>
+      </div>
+      <div class="skill-card fade-in">
+        <div class="skill-card-header"><div class="icon" style="background:rgba(34,197,94,0.15);color:#22c55e"><i class="fas fa-lightbulb"></i></div><span class="level" style="background:rgba(255,255,255,0.08);color:#f0fdf4">Soft Skill</span></div>
+        <h3>Critical Thinking</h3><div class="skill-bar"><div class="skill-bar-fill" data-width="88"></div></div><p class="skill-category">Analysis • Evaluation • Reasoning</p>
+      </div>
+      <div class="skill-card fade-in">
+        <div class="skill-card-header"><div class="icon" style="background:rgba(34,197,94,0.15);color:#22c55e"><i class="fas fa-puzzle-piece"></i></div><span class="level" style="background:rgba(255,255,255,0.08);color:#f0fdf4">Soft Skill</span></div>
+        <h3>Problem Solving</h3><div class="skill-bar"><div class="skill-bar-fill" data-width="86"></div></div><p class="skill-category">Structured Thinking • Troubleshooting</p>
+      </div>
+      <div class="skill-card fade-in">
+        <div class="skill-card-header"><div class="icon" style="background:rgba(34,197,94,0.15);color:#16a34a"><i class="fas fa-heart"></i></div><span class="level" style="background:rgba(255,255,255,0.08);color:#f0fdf4">Soft Skill</span></div>
+        <h3>Emotional Intelligence</h3><div class="skill-bar"><div class="skill-bar-fill" data-width="84"></div></div><p class="skill-category">Empathy • Self-awareness • Collaboration</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="certs-section section-padding" id="certifications">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-tag">// Certifications & Training</span>
+      <h2 class="section-title">Learning Journey Timeline</h2>
+      <p class="section-subtitle">Seminars, courses, and certifications that shaped my expertise</p>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-item"><div class="timeline-dot"></div>
+        <div class="timeline-card"><div class="timeline-date">October 19, 2024</div><h3>AI Ethics and Governance</h3><p class="issuer">USAID Asia Open RAN Academy</p>
+          <div class="timeline-topics"><span class="topic-tag">Responsible AI</span><span class="topic-tag">Bias & Fairness</span><span class="topic-tag">Transparency</span><span class="topic-tag">Governance Frameworks</span></div>
+          <div class="timeline-insights"><h4>Key Insights</h4><ul><li>Responsible AI development is essential for trust</li><li>Bias and fairness must be addressed in AI systems</li><li>Governance frameworks guide ethical AI deployment</li></ul></div>
+        </div>
+      </div>
+
+      <div class="timeline-item"><div class="timeline-dot"></div>
+        <div class="timeline-card"><div class="timeline-date">October 26, 2024</div><h3>Natural Language Processing Fundamentals</h3><p class="issuer">USAID Asia Open RAN Academy</p>
+          <div class="timeline-topics"><span class="topic-tag">NLP Concepts</span><span class="topic-tag">Language Models</span><span class="topic-tag">Text Processing</span><span class="topic-tag">Chatbots</span></div>
+          <div class="timeline-insights"><h4>Key Insights</h4><ul><li>NLP enables machines to understand human language</li><li>Language models power modern AI communication</li><li>Text processing is fundamental to NLP applications</li></ul></div>
+        </div>
+      </div>
+
+      <div class="timeline-item"><div class="timeline-dot"></div>
+        <div class="timeline-card"><div class="timeline-date">February 5, 2026</div><h3>Skills to Succeed Academy</h3><p class="issuer">Accenture</p>
+          <div class="timeline-topics"><span class="topic-tag">Lifelong Learning</span><span class="topic-tag">Problem Solving</span><span class="topic-tag">Critical Thinking</span><span class="topic-tag">Emotional Intelligence</span><span class="topic-tag">Generative AI</span></div>
+          <div class="timeline-insights"><h4>Key Insights</h4><ul><li>Learning is a continuous, lifelong journey</li><li>Soft skills are just as important as technical skills</li><li>Problem-solving requires structured, analytical thinking</li></ul></div>
+        </div>
+      </div>
+
+      <div class="timeline-item"><div class="timeline-dot"></div>
+        <div class="timeline-card"><div class="timeline-date">January 29, 2026</div><h3>DevRoutes 2026: Learning How to Learn with Roadmaps</h3><p class="issuer">De La Salle Lipa – JPCS Weeks</p>
+          <div class="timeline-topics"><span class="topic-tag">Career Roadmaps</span><span class="topic-tag">AI Engineering</span><span class="topic-tag">Mobile Dev</span><span class="topic-tag">Cybersecurity</span><span class="topic-tag">Continuous Learning</span></div>
+          <div class="timeline-insights"><h4>Speaker: Sir Condeilamor Gantalao – Information Security Manager</h4><ul><li>Multiple routes exist in tech — AI, mobile, frontend, backend, cybersecurity</li><li>Career roadmaps are essential for intentional, long-term growth</li><li>Action matters more than perfection — hackathons, projects, and challenges accelerate learning</li></ul></div>
+        </div>
+      </div>
+
+      <div class="timeline-item"><div class="timeline-dot"></div>
+        <div class="timeline-card"><div class="timeline-date">February 18, 2026</div><h3>Introduction to Modern AI</h3><p class="issuer">Cisco Networking Academy / DICT-ITU DTC Initiative</p>
+          <div class="timeline-topics"><span class="topic-tag">AI Fundamentals</span><span class="topic-tag">Machine Learning</span><span class="topic-tag">Ethical AI</span><span class="topic-tag">Industry Applications</span></div>
+          <div class="timeline-insights"><h4>Key Insights</h4><ul><li>AI learns from data and improves over time</li><li>AI is widely used across industries</li><li>Responsible AI use is critical for society</li></ul></div>
+        </div>
+      </div>
+
+      <div class="timeline-item"><div class="timeline-dot"></div>
+        <div class="timeline-card"><div class="timeline-date">March 11, 2026</div><h3>Introduction to Python</h3><p class="issuer">DataCamp</p>
+          <div class="timeline-topics"><span class="topic-tag">Python Basics</span><span class="topic-tag">Variables</span><span class="topic-tag">Lists</span><span class="topic-tag">Functions</span><span class="topic-tag">NumPy</span></div>
+          <div class="timeline-insights"><h4>Key Insights</h4><ul><li>Python syntax is powerful yet approachable</li><li>Lists and arrays are essential data structures</li><li>Libraries like NumPy greatly improve efficiency</li></ul></div>
+        </div>
+      </div>
+
+      <div class="timeline-item"><div class="timeline-dot"></div>
+        <div class="timeline-card"><div class="timeline-date">April 9, 2026</div><h3>Intermediate Python</h3><p class="issuer">DataCamp</p>
+          <div class="timeline-topics"><span class="topic-tag">pandas</span><span class="topic-tag">Matplotlib</span><span class="topic-tag">Loops</span><span class="topic-tag">Control Flow</span><span class="topic-tag">Simulations</span></div>
+          <div class="timeline-insights"><h4>Key Insights</h4><ul><li>DataFrames are essential for data analysis</li><li>Control flow drives program logic</li><li>Loops automate repetitive processes efficiently</li></ul></div>
+        </div>
+      </div>
+
+      <div class="timeline-item"><div class="timeline-dot"></div>
+        <div class="timeline-card"><div class="timeline-date">April 14, 2026</div><h3>Networking Basics</h3><p class="issuer">Cisco Networking Academy</p>
+          <div class="timeline-topics"><span class="topic-tag">OSI / TCP-IP</span><span class="topic-tag">IPv4 / IPv6</span><span class="topic-tag">Routing</span><span class="topic-tag">Switching</span><span class="topic-tag">DNS / DHCP</span></div>
+          <div class="timeline-insights"><h4>Key Insights</h4><ul><li>Structured models enable network communication</li><li>Subnetting is fundamental to network design</li><li>Tools like ping and tracert aid diagnostics</li></ul></div>
+        </div>
+      </div>
+
+      <div class="timeline-item"><div class="timeline-dot"></div>
+        <div class="timeline-card"><div class="timeline-date">April 15, 2026</div><h3>Network Addressing and Basic Troubleshooting</h3><p class="issuer">Cisco Networking Academy</p>
+          <div class="timeline-topics"><span class="topic-tag">IPv4/IPv6</span><span class="topic-tag">Routing Tables</span><span class="topic-tag">Switching</span><span class="topic-tag">ICMPv6</span><span class="topic-tag">Troubleshooting</span></div>
+          <div class="timeline-insights"><h4>Key Insights</h4><ul><li>IPv6 relies on ICMPv6 for discovery</li><li>Routers use destination IPs for forwarding</li><li>Structured troubleshooting improves efficiency</li></ul></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATE GALLERY -->
+<section class="certs-section section-padding" id="cert-gallery">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-tag">// Certificate Gallery</span>
+      <h2 class="section-title">Certifications Earned</h2>
+      <p class="section-subtitle">Click any certificate to view in full size</p>
+    </div>
+    <div class="cert-gallery-grid">
+      <div class="cert-gallery-item fade-in" onclick="openLightbox('certs/cert-intro-python.png')">
+        <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+        <img src="certs/cert-intro-python.png" alt="Introduction to Python Certificate" loading="lazy">
+        <div class="cert-label"><span>Introduction to Python</span><small>DataCamp • Mar 2026</small></div>
+      </div>
+      <div class="cert-gallery-item fade-in" onclick="openLightbox('certs/cert-intermediate-python.png')">
+        <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+        <img src="certs/cert-intermediate-python.png" alt="Intermediate Python Certificate" loading="lazy">
+        <div class="cert-label"><span>Intermediate Python</span><small>DataCamp • Apr 2026</small></div>
+      </div>
+      <div class="cert-gallery-item fade-in" onclick="openLightbox('certs/cert-intro-modern-ai.png')">
+        <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+        <img src="certs/cert-intro-modern-ai.png" alt="Introduction to Modern AI Certificate" loading="lazy">
+        <div class="cert-label"><span>Introduction to Modern AI</span><small>Cisco • Feb 2026</small></div>
+      </div>
+      <div class="cert-gallery-item fade-in" onclick="openLightbox('certs/cert-networking-basics.png')">
+        <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+        <img src="certs/cert-networking-basics.png" alt="Networking Basics Certificate" loading="lazy">
+        <div class="cert-label"><span>Networking Basics</span><small>Cisco • Apr 2026</small></div>
+      </div>
+      <div class="cert-gallery-item fade-in" onclick="openLightbox('certs/cert-network-addressing.png')">
+        <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+        <img src="certs/cert-network-addressing.png" alt="Network Addressing Certificate" loading="lazy">
+        <div class="cert-label"><span>Network Addressing & Troubleshooting</span><small>Cisco • Apr 2026</small></div>
+      </div>
+      <div class="cert-gallery-item fade-in" onclick="openLightbox('certs/cert-nlp-fundamentals.png')">
+        <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+        <img src="certs/cert-nlp-fundamentals.png" alt="NLP Fundamentals Certificate" loading="lazy">
+        <div class="cert-label"><span>NLP Fundamentals</span><small>USAID / Asia Open RAN • Oct 2024</small></div>
+      </div>
+      <div class="cert-gallery-item fade-in" onclick="openLightbox('certs/cert-ai-ethics.png')">
+        <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+        <img src="certs/cert-ai-ethics.png" alt="AI Ethics and Governance Certificate" loading="lazy">
+        <div class="cert-label"><span>AI Ethics and Governance</span><small>USAID / Asia Open RAN • Oct 2024</small></div>
+      </div>
+      <div class="cert-gallery-item fade-in" onclick="openLightbox('certs/cert-devroutes-2026.png')">
+        <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+        <img src="certs/cert-devroutes-2026.png" alt="DevRoutes 2026 Certificate" loading="lazy">
+        <div class="cert-label"><span>DevRoutes 2026 — JPCS</span><small>De La Salle Lipa • Jan 2026</small></div>
+      </div>
+      <div class="cert-gallery-item fade-in" onclick="openLightbox('certs/cert-accenture-skills.png')">
+        <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+        <img src="certs/cert-accenture-skills.png" alt="Accenture Skills to Succeed Academy Certificate" loading="lazy">
+        <div class="cert-label"><span>Skills to Succeed Academy</span><small>Accenture • Feb 2026</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COURSE DEEP DIVE -->
+<section class="certs-section section-padding" id="courses">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-tag">// Course Deep Dive</span>
+      <h2 class="section-title">Accenture Skills to Succeed Academy</h2>
+      <p class="section-subtitle">In-depth look at completed online courses and key takeaways</p>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card fade-in">
+        <div class="project-image" style="background:linear-gradient(135deg,#166534,#22c55e)"><div class="overlay-gradient"><i class="fas fa-graduation-cap"></i></div></div>
+        <div class="project-content"><h3>Lifelong Learning</h3><p>Emphasizes continuous learning beyond formal education. Develops a growth mindset — viewing intelligence and skills as abilities developed through effort, practice, and feedback.</p>
+          <div class="project-tags"><span>Growth Mindset</span><span>Resilience</span><span>Adaptability</span><span>Self-improvement</span></div>
+        </div>
+      </div>
+      <div class="project-card fade-in">
+        <div class="project-image" style="background:linear-gradient(135deg,#16a34a,#86efac)"><div class="overlay-gradient"><i class="fas fa-cogs"></i></div></div>
+        <div class="project-content"><h3>Solving Problems</h3><p>Introduces systematic approaches to identifying, analyzing, and resolving everyday and complex problems. Uses structured methods like logic trees, hypotheses, and root-cause analysis.</p>
+          <div class="project-tags"><span>Root-cause Analysis</span><span>Logic Trees</span><span>Structured Thinking</span></div>
+        </div>
+      </div>
+      <div class="project-card fade-in">
+        <div class="project-image" style="background:linear-gradient(135deg,#22c55e,#166534)"><div class="overlay-gradient"><i class="fas fa-brain"></i></div></div>
+        <div class="project-content"><h3>Thinking Critically</h3><p>Develops the ability to analyze information logically, question assumptions, and make reasoned judgments. Emphasizes objectivity, reflection, and evidence-based thinking.</p>
+          <div class="project-tags"><span>Evidence-based</span><span>Reflection</span><span>Decision Making</span></div>
+        </div>
+      </div>
+      <div class="project-card fade-in">
+        <div class="project-image" style="background:linear-gradient(135deg,#166534,#16a34a)"><div class="overlay-gradient"><i class="fas fa-heart"></i></div></div>
+        <div class="project-content"><h3>Emotional Intelligence</h3><p>Focuses on understanding, managing, and regulating emotions. Highlights emotional awareness, self-control, empathy, and the S.T.O.P.P. strategy for managing intense emotions.</p>
+          <div class="project-tags"><span>Self-awareness</span><span>Empathy</span><span>S.T.O.P.P.</span><span>Communication</span></div>
+        </div>
+      </div>
+      <div class="project-card fade-in">
+        <div class="project-image" style="background:linear-gradient(135deg,#16a34a,#22c55e)"><div class="overlay-gradient"><i class="fas fa-robot"></i></div></div>
+        <div class="project-content"><h3>Introduction to Generative AI</h3><p>Provides an overview of AI systems that create new content — text, images, code, audio, and video. Covers responsible and ethical use of AI technologies in academic and professional settings.</p>
+          <div class="project-tags"><span>Generative AI</span><span>Chatbots</span><span>AI Ethics</span><span>Productivity</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DEVROUTES REFLECTION -->
+    <div style="margin-top:64px">
+      <div class="section-header fade-in">
+        <span class="section-tag">// Seminar Reflection</span>
+        <h2 class="section-title">DevRoutes 2026 — Analysis & Reflection</h2>
+        <p class="section-subtitle">What? So What? Now What?</p>
+      </div>
+      <div class="reflection-content fade-in">
+        <div class="reflection-card">
+          <h4 style="color:#22c55e;margin-bottom:12px"><i class="fas fa-bolt"></i> What made the most impact?</h4>
+          <p>The idea that <strong>"your career is a journey; roadmaps help you navigate it"</strong> made the most impact. It emphasized that confusion and uncertainty are normal, but having a clear roadmap can provide direction even when the destination changes.</p>
+          <h4 style="color:#86efac;margin-bottom:12px"><i class="fas fa-lightbulb"></i> So, what does this mean?</h4>
+          <p>This means that I do not need to have everything figured out immediately. Understanding that careers are built step by step reduces pressure and encourages intentional growth. The information helps me see how learning new skills, choosing projects, and gaining experience all connect to long-term career goals in tech.</p>
+          <h4 style="color:#16a34a;margin-bottom:12px"><i class="fas fa-road"></i> Now, where do I go from here?</h4>
+          <p style="margin-bottom:0">Moving forward, I will start mapping my own career roadmap by identifying my current skills and interests, then setting short-term milestones such as completing small projects or joining tech-related activities. I will also participate in challenges, build projects, and share my work to gain experience and clarity about which career path in tech best fits me.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SWOT ANALYSIS -->
+    <div style="margin-top:64px">
+      <div class="section-header fade-in">
+        <span class="section-tag">// Strategic Analysis</span>
+        <h2 class="section-title">S.W.O.T. Analysis of Courses</h2>
+        <p class="section-subtitle">Evaluating strengths, weaknesses, opportunities, and threats</p>
+      </div>
+      <div class="skills-grid fade-in">
+        <div class="skill-card" style="border-left:3px solid #22c55e">
+          <div class="skill-card-header"><div class="icon" style="background:rgba(34,197,94,0.15);color:#22c55e"><i class="fas fa-shield-alt"></i></div><span class="level" style="background:rgba(34,197,94,0.1);color:#22c55e">Strengths</span></div>
+          <ul style="color:var(--text-secondary);font-size:0.85rem;padding-left:16px;display:flex;flex-direction:column;gap:8px;list-style:disc">
+            <li>Well-rounded skill set combining cognitive, emotional, and tech competencies</li>
+            <li>Transferable life skills applicable across all contexts</li>
+            <li>Promotes self-awareness, adaptability, and continuous improvement</li>
+            <li>Structured thinking and decision-making skills</li>
+            <li>Introduces emerging technologies keeping learners relevant</li>
+          </ul>
+        </div>
+        <div class="skill-card" style="border-left:3px solid #86efac">
+          <div class="skill-card-header"><div class="icon" style="background:rgba(134,239,172,0.15);color:#86efac"><i class="fas fa-exclamation-triangle"></i></div><span class="level" style="background:rgba(134,239,172,0.1);color:#86efac">Weaknesses</span></div>
+          <ul style="color:var(--text-secondary);font-size:0.85rem;padding-left:16px;display:flex;flex-direction:column;gap:8px;list-style:disc">
+            <li>Concepts may appear abstract without real-world practice</li>
+            <li>Benefits depend on learner motivation and self-discipline</li>
+            <li>Limited technical depth in Generative AI for hands-on mastery</li>
+            <li>Soft skills can be difficult to measure objectively</li>
+            <li>Learners may underestimate soft skills vs technical skills</li>
+          </ul>
+        </div>
+        <div class="skill-card" style="border-left:3px solid #16a34a">
+          <div class="skill-card-header"><div class="icon" style="background:rgba(22,163,74,0.15);color:#16a34a"><i class="fas fa-rocket"></i></div><span class="level" style="background:rgba(22,163,74,0.1);color:#16a34a">Opportunities</span></div>
+          <ul style="color:var(--text-secondary);font-size:0.85rem;padding-left:16px;display:flex;flex-direction:column;gap:8px;list-style:disc">
+            <li>Enhance employability, leadership potential, and academic performance</li>
+            <li>Strong foundation for specialization in AI, software dev, cybersecurity</li>
+            <li>Supports lifelong adaptability as industries evolve</li>
+            <li>Encourages ethical, responsible AI use</li>
+            <li>Can be integrated into projects, internships, and collaborative learning</li>
+          </ul>
+        </div>
+        <div class="skill-card" style="border-left:3px solid #166534">
+          <div class="skill-card-header"><div class="icon" style="background:rgba(22,101,52,0.2);color:#86efac"><i class="fas fa-bolt"></i></div><span class="level" style="background:rgba(22,101,52,0.15);color:#86efac">Threats</span></div>
+          <ul style="color:var(--text-secondary);font-size:0.85rem;padding-left:16px;display:flex;flex-direction:column;gap:8px;list-style:disc">
+            <li>Rapid tech change may outpace course updates</li>
+            <li>Overreliance on AI tools may weaken independent thinking</li>
+            <li>Resistance to feedback may prevent growth mindset development</li>
+            <li>Misuse of AI tools may lead to ethical or integrity concerns</li>
+            <li>Without continued practice, learned skills may decline</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects-section section-padding" id="projects">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-tag">// Portfolio</span>
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">Hands-on work applying theory to practice</p>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card fade-in">
+        <div class="project-image" style="background:linear-gradient(135deg,#166534,#22c55e)"><div class="overlay-gradient"><i class="fas fa-qrcode"></i></div></div>
+        <div class="project-content"><h3>QR-Based Verification & Document Validation System for 4Ps</h3><p>A system designed to improve beneficiary verification, reduce duplicate registrations, and streamline compliance checking using QR technology and centralized records.</p>
+          <div class="project-tags"><span>QR Technology</span><span>Verification</span><span>Database</span><span>Compliance</span></div>
+        </div>
+      </div>
+      <div class="project-card fade-in">
+        <div class="project-image" style="background:linear-gradient(135deg,#16a34a,#86efac)"><div class="overlay-gradient"><i class="fas fa-server"></i></div></div>
+        <div class="project-content"><h3>Windows/Linux Network Infrastructure Project</h3><p>Configured enterprise-style network services including Active Directory, DNS, DHCP, Samba, and Linux web server integration in a hybrid Windows-Linux environment.</p>
+          <div class="project-tags"><span>Active Directory</span><span>DNS/DHCP</span><span>Samba</span><span>Linux</span></div>
+        </div>
+      </div>
+      <div class="project-card fade-in">
+        <div class="project-image" style="background:linear-gradient(135deg,#22c55e,#166534)"><div class="overlay-gradient"><i class="fas fa-chart-line"></i></div></div>
+        <div class="project-content"><h3>Python Data Analysis Mini Projects</h3><p>Created small Python programs using pandas, NumPy, and Matplotlib for data analysis, simulations, and visualization.</p>
+          <div class="project-tags"><span>Python</span><span>pandas</span><span>NumPy</span><span>Matplotlib</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REFLECTION -->
+<section class="reflection-section section-padding" id="reflection">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-tag">// Learning Journey</span>
+      <h2 class="section-title">Reflection</h2>
+      <p class="section-subtitle">Looking back to move forward</p>
+    </div>
+    <div class="reflection-content fade-in">
+      <div class="reflection-card">
+        <p>Throughout my journey as an IT student, I've come to realize that <strong>continuous self-improvement</strong> is not just a choice—it's a necessity. Technology evolves at an unprecedented pace, and the only way to stay relevant is to embrace change with curiosity and determination.</p>
+        <p>Every seminar attended, every certification earned, and every project completed has reinforced a core belief: <strong>adapting to emerging technologies</strong> is the hallmark of a true IT professional. From networking fundamentals to artificial intelligence, each domain has taught me that learning never truly ends—it only transforms.</p>
+        <p>I've also learned that technical knowledge alone is not enough. <strong>Combining technical expertise with ethics, communication skills, and emotional intelligence</strong> creates a well-rounded professional who can lead, collaborate, and innovate responsibly.</p>
+        <p style="margin-bottom:0;">Looking ahead, I am committed to pursuing further specialization in <strong>AI, networking, cybersecurity, system development, and data science</strong>. I envision myself contributing to teams that build secure, intelligent, and user-centered technology solutions—systems that make a meaningful difference in people's lives.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section section-padding" id="contact">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-tag">// Get in Touch</span>
+      <h2 class="section-title">Contact Me</h2>
+      <p class="section-subtitle">Let's connect and explore opportunities together</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info fade-in">
+        <h3>Let's Build <span style="background:var(--gradient-1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Something Great</span></h3>
+        <p>I'm always open to new opportunities, collaborations, and conversations about technology. Feel free to reach out through any of the platforms below.</p>
+        <div class="contact-links">
+          <a href="mailto:leemuel_lenard_garcia@dlsl.edu.ph" class="contact-link">
+            <div class="link-icon" style="background:rgba(34,197,94,0.15);color:#22c55e"><i class="fas fa-envelope"></i></div>
+            <div><span>leemuel_lenard_garcia@dlsl.edu.ph</span><small>Professional Email</small></div>
+          </a>
+          <a href="https://github.com/lemon-gitgit" target="_blank" class="contact-link">
+            <div class="link-icon" style="background:rgba(34,197,94,0.15);color:#16a34a"><i class="fab fa-github"></i></div>
+            <div><span>github.com/lemon-gitgit</span><small>GitHub Profile</small></div>
+          </a>
+          <a href="https://www.linkedin.com/in/leemuel-garcia-49354436b/" target="_blank" class="contact-link">
+            <div class="link-icon" style="background:rgba(34,197,94,0.15);color:#86efac"><i class="fab fa-linkedin-in"></i></div>
+            <div><span>linkedin.com/in/leemuel-garcia</span><small>LinkedIn Profile</small></div>
+          </a>
+        </div>
+      </div>
+      <div class="contact-cta fade-in">
+        <h3>Quick Stats</h3>
+        <p>A snapshot of my academic and professional progress so far.</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;text-align:center;margin-top:24px">
+          <div style="padding:16px;border-radius:12px;background:var(--glass);border:1px solid var(--glass-border)"><div style="font-size:1.5rem;font-weight:800;color:#22c55e">3</div><div style="font-size:0.75rem;color:var(--text-muted)">Projects</div></div>
+          <div style="padding:16px;border-radius:12px;background:var(--glass);border:1px solid var(--glass-border)"><div style="font-size:1.5rem;font-weight:800;color:#86efac">9</div><div style="font-size:0.75rem;color:var(--text-muted)">Certificates</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2026 Leemuel Lenard D. Garcia. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scroll-top" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></button>
+
+<!-- Lightbox Modal -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+  <img id="lightbox-img" src="" alt="Certificate">
+</div>
+
+<script src="script.js"></script>
+<script>
+function openLightbox(src) {
+  const lb = document.getElementById('lightbox');
+  const img = document.getElementById('lightbox-img');
+  img.src = src;
+  lb.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  const lb = document.getElementById('lightbox');
+  lb.classList.remove('active');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+</script>
+</body>
+</html>
